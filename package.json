@@ -1,7 +1,7 @@
 {
-	"name": "candelaria-dipietro",
+	"name": "moretti",
 	"private": true,
-	"description": "Candelaria Di Pietro personal website",
+	"description": "Moretti institutional website",
 	"version": "1.0.1",
 	"author": "penHolder <penhold3r@gmail.com>",
 	"dependencies": {
@@ -38,6 +38,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/penhold3r/candelaria-dipietro"
+		"url": "https://github.com/penhold3r/moretti"
 	}
 }

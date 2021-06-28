@@ -1,17 +1,15 @@
 module.exports = {
 	siteMetadata: {
-		title: `Candelaria Di Pietro`,
-		description: `Estudio Di Pietro se especializa en despidos, accidentes y enfermedades laborales y accidentes de tránsito.`,
-		siteUrl: 'https://estudiojuridicodipietro.com',
+		title: `Estudio Moretti`,
+		description: `Estudio Moretti.`,
+		siteUrl: 'https://estudiomoretti.com',
 		keywords: 'abogada consultoria legal legales jucio',
 		author: `@penholder`,
 		socialMedia: [
 			{
 				name: 'Whatsapp',
 				icon: 'ri-whatsapp-line',
-				url: `https://wa.me/5492613064177?text=${encodeURI(
-					'Hola, necesito hacer una consulta.'
-				)}`,
+				url: `https://wa.me/5492613064177?text=${encodeURI('Hola, necesito hacer una consulta.')}`,
 			},
 		],
 	},
@@ -41,8 +39,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Candelaria Di Pietro`,
-				short_name: `DiPietro`,
+				name: `Estudio Moretti`,
+				short_name: `Moretti`,
 				start_url: `/`,
 				background_color: `#e7cfbe`,
 				theme_color: `#38424d`,
