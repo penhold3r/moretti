@@ -34,39 +34,47 @@ const styles = {
 
 const Hero = () => {
 	return (
-		<section className='hero' style={styles.hero} id='inicio'>
+		<section className="hero" style={styles.hero} id="inicio">
 			<Jumbotron
 				fluid
 				style={styles.jumbo}
-				className={`m-0 d-flex justify-content-center align-items-center flex-column`}>
+				className={`m-0 d-flex justify-content-center align-items-center flex-column`}
+			>
 				<Container className={`d-flex flex-column`}>
 					<h2 className={`hero-text display-4 text-center text-white`}>
-						Nos dedicamos al derecho laboral y accidentes de tránsito.
+						Protegemos lo importante de su vida
 					</h2>
 					{isMobileOnly ? (
 						<Button
-							href='/#contacto'
-							variant='secondary'
-							className='mt-5 mx-auto d-inline-flex align-items-center'>
-							<i className='ri-chat-3-line mr-2'></i>
+							href="/#contacto"
+							variant="secondary"
+							className="mt-5 mx-auto d-inline-flex align-items-center"
+						>
+							<i className="ri-chat-3-line mr-2"></i>
 							<span>Asesorate</span>
 						</Button>
 					) : (
 						<Button
-							href='/#nosotros'
-							variant='outline-secondary'
-							className='mt-5 mx-auto'
-							size='lg'>
-							<span className='text-uppercase' style={styles.cta}>
+							href="/#nosotros"
+							variant="outline-secondary"
+							className="mt-5 mx-auto"
+							size="lg"
+						>
+							<span className="text-uppercase" style={styles.cta}>
 								Conocenos
 							</span>
 						</Button>
 					)}
 				</Container>
-				<Link to={`/#nosotros`} className={`scroll text-white h2`} style={styles.scroll}>
+				<Link
+					to={`/#nosotros`}
+					className={`scroll text-white h2`}
+					style={styles.scroll}
+				>
 					<i
-						className='ri-arrow-down-line d-flex justify-content-center'
-						style={styles.scroll}></i>
+						className="ri-arrow-down-line d-flex justify-content-center"
+						style={styles.scroll}
+					></i>
 				</Link>
 			</Jumbotron>
 		</section>
