@@ -5,7 +5,27 @@ import { isMobileOnly } from 'react-device-detect'
 
 import Link from './Link'
 
-import logo from '../images/candelaria_di_pietro-logo.svg'
+import logo from '../images/moretti-logo.svg'
+
+const styles = {
+	nav: {
+		transition: 'all 0.3s',
+	},
+	logo: {
+		height: '60px',
+		objectFit: 'contain',
+		width: '200px',
+	},
+	contact: {
+		bottom: 'auto',
+		right: '3rem',
+		top: '18px',
+	},
+	hamb: {
+		fontSize: '1.5rem',
+		cursor: 'pointer',
+	},
+}
 
 const Header = () => {
 	const query = graphql`
@@ -23,32 +43,8 @@ const Header = () => {
 	const [opaque, setOpaque] = useState(false)
 	const [colapsed, setColapsed] = useState(true)
 
-	const styles = {
-		nav: {
-			transition: 'all 0.3s',
-		},
-		logo: {
-			height: '60px',
-			objectFit: 'contain',
-			width: '200px',
-		},
-		contact: {
-			bottom: 'auto',
-			right: '3rem',
-			top: '18px',
-		},
-		hamb: {
-			fontSize: '1.5rem',
-			cursor: 'pointer',
-		},
-	}
-
 	const toggleBtn = useRef(null)
-	const toggleIcon = colapsed ? (
-		<i className='ri-menu-line'></i>
-	) : (
-		<i className='ri-close-line'></i>
-	)
+	const toggleIcon = colapsed ? <i className='ri-menu-line'></i> : <i className='ri-close-line'></i>
 
 	const handleToggle = () => {
 		setColapsed(!colapsed)
@@ -67,7 +63,7 @@ const Header = () => {
 
 	return (
 		<header className='main-header'>
-			<Navbar bg='primary' variant='dark' fixed='top' expand='md' style={styles.nav}>
+			<Navbar bg='white' variant='light' fixed='top' expand='md' style={styles.nav}>
 				<Container className='pos-relative'>
 					<Navbar.Brand href='#'>
 						<img

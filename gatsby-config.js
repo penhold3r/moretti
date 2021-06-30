@@ -1,9 +1,9 @@
 module.exports = {
 	siteMetadata: {
 		title: `Estudio Moretti`,
-		description: `Estudio Moretti.`,
+		description: `Estudio Moretti es una organización de productores asesores especializados en varias ramas del seguro, con más de 20 años de experiencia en la materia.`,
 		siteUrl: 'https://estudiomoretti.com',
-		keywords: 'abogada consultoria legal legales jucio',
+		keywords: 'seguro vida asaguradora art accidentes laboral praxist',
 		author: `@penholder`,
 		socialMedia: [
 			{
@@ -42,8 +42,8 @@ module.exports = {
 				name: `Estudio Moretti`,
 				short_name: `Moretti`,
 				start_url: `/`,
-				background_color: `#e7cfbe`,
-				theme_color: `#38424d`,
+				background_color: `#FFFFFF`,
+				theme_color: `#093A58`,
 				display: `standalone`,
 				icon: `src/images/favicon.png`,
 			},

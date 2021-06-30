@@ -3,14 +3,14 @@
 * COLORS
 *
 */
-$primary-color: #38424d;
-$primary-grey: #888e94;
+$primary-color: #093A58;
+$primary-grey: lighten(desaturate($primary-color, 75%), 10%);
 
-$secondary-color: #e7cfbe;
+$secondary-color: #058B52;
 $secondary-grey: lighten(desaturate($secondary-color, 75%), 10%);
 
 $grey: desaturate($primary-color, 80%);
-$light: #e8d0bf;
+$light: #E2EAED;
 $dark: darken(desaturate($primary-color, 85%), 25%);
 
 $theme-colors: (
@@ -57,9 +57,9 @@ $theme-colors: (
 *
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-$font-family-base: 'Noto Serif', Georgia, serif;
+$font-family-base: 'Open Sans', sans-serif;
 
 $enable-responsive-font-sizes: true;
 
