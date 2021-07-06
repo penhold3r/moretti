@@ -2,12 +2,12 @@ import React from 'react'
 import { Jumbotron, Container, Button } from 'react-bootstrap'
 import { isMobileOnly } from 'react-device-detect'
 
-import hex2rgba from '../utils/hex2rgba'
+// import hex2rgba from '../utils/hex2rgba'
 
 import Link from './Link'
 
-import colors from '../styles/_variables.module.scss'
-import bg from '../images/candelaria_di_pietro-hero.jpg'
+// import colors from '../styles/_variables.module.scss'
+import bg from '../images/moretti-hero.jpg'
 
 const styles = {
 	hero: {
@@ -15,7 +15,7 @@ const styles = {
 		position: 'relative',
 	},
 	jumbo: {
-		background: hex2rgba(colors.primary, 0.45),
+		background: 'transparent',
 		height: '100vh',
 	},
 	cta: {
@@ -40,14 +40,18 @@ const Hero = () => {
 				style={styles.jumbo}
 				className={`m-0 d-flex justify-content-center align-items-center flex-column`}
 			>
-				<Container className={`d-flex flex-column`}>
-					<h2 className={`hero-text display-4 text-center text-white`}>
-						Protegemos lo importante de su vida
+				<Container className={`d-flex flex-column align-items-start`}>
+					<h2 className={`hero-text h1 text-primary text-uppercase`}>
+						<span className="text-secondary">
+							<strong>Protegemos </strong>
+						</span>
+						<br />
+						lo importante de su vida
 					</h2>
 					{isMobileOnly ? (
 						<Button
 							href="/#contacto"
-							variant="secondary"
+							variant="brand"
 							className="mt-5 mx-auto d-inline-flex align-items-center"
 						>
 							<i className="ri-chat-3-line mr-2"></i>
@@ -56,8 +60,8 @@ const Hero = () => {
 					) : (
 						<Button
 							href="/#nosotros"
-							variant="outline-secondary"
-							className="mt-5 mx-auto"
+							variant="brand"
+							className="mt-5"
 							size="lg"
 						>
 							<span className="text-uppercase" style={styles.cta}>

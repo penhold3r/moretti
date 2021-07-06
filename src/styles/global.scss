@@ -25,12 +25,25 @@ body {
 		background: $light;
 	}
 
+	.bg-primary-gradient {
+		background: linear-gradient(45deg, $primary-color, $primary-grey);
+	}
+
+	.bg-secondary-gradient {
+		background: linear-gradient(45deg, $secondary-color, $secondary-grey);
+	}
+
+	.bg-gradient {
+		background: linear-gradient(45deg, $brand-color, $secondary-color);
+	}
+
 	.modal-header .close {
 		outline: none;
 	}
 
 	.hero-text {
-		@include font-size(3rem);
+		@include font-size(4rem);
+		max-width: 500px;
 	}
 
 	.hero-sub {

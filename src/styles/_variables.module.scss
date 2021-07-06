@@ -3,17 +3,20 @@
 * COLORS
 *
 */
-$primary-color: #093A58;
+$brand-color: #00669e;
+
+$primary-color: #093a58;
 $primary-grey: lighten(desaturate($primary-color, 75%), 10%);
 
-$secondary-color: #058B52;
+$secondary-color: #058b52;
 $secondary-grey: lighten(desaturate($secondary-color, 75%), 10%);
 
 $grey: desaturate($primary-color, 80%);
-$light: #E2EAED;
+$light: #e2eaed;
 $dark: darken(desaturate($primary-color, 85%), 25%);
 
 $theme-colors: (
+	'brand': $brand-color,
 	'primary': $primary-color,
 	'primary-grey': $primary-grey,
 	'secondary': $secondary-color,
@@ -33,6 +36,7 @@ $theme-colors: (
 );
 
 :export {
+	brand: $brand-color;
 	primary: $primary-color;
 	primaryGrey: $primary-grey;
 	secondary: $secondary-color;
@@ -72,7 +76,11 @@ $enable-responsive-font-sizes: true;
 * SCROLLBAR COLOR
 *
 */
-@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+@mixin scrollbars(
+	$size,
+	$foreground-color,
+	$background-color: mix($foreground-color, white, 50%)
+) {
 	// Webkit
 	&::-webkit-scrollbar {
 		width: $size;
