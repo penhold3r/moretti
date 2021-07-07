@@ -45,18 +45,20 @@ const Services = () => {
 				<Row className="pb-4">
 					{servicesList.map((service, index) => (
 						<Col sm={12} md={6} className="my-3" key={index}>
-							<Card className={`text-center bg-light h-100`}>
-								<Card.Header className="bg-primary-grey py-4">
-									<Card.Title>
-										<span className="h4 text-light">{service.title}</span>
+							<Card className={`text-center border-0 rounded-0 h-100`}>
+								<Card.Header className="border-0 rounded-0 bg-primary py-4">
+									<Card.Title className="text-light text-uppercase m-0">
+										<span className="h4">
+											<strong>{service.title}</strong>
+										</span>
 									</Card.Title>
 								</Card.Header>
-								<Card.Body className="bg-primary p-0">
+								<Card.Body className="bg-white p-0">
 									<ListGroup variant="flush">
 										{service.list.map(item => (
 											<ListGroup.Item
 												key={item}
-												className="bg-transparent text-light"
+												className="bg-transparent text-brand text-left text-uppercase"
 											>
 												{item}
 											</ListGroup.Item>
