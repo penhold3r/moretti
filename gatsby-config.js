@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
-		title: `Estudio Moretti`,
-		description: `Estudio Moretti es una organización de productores asesores especializados en varias ramas del seguro, con más de 20 años de experiencia en la materia.`,
+		title: `Moretti Seguros`,
+		description: `Moretti Seguros es una organización de productores asesores especializados en varias ramas del seguro, con más de 20 años de experiencia en la materia.`,
 		siteUrl: 'https://estudiomoretti.com',
 		keywords: 'seguro vida asaguradora art accidentes laboral praxist',
 		author: `@penholder`,
@@ -9,7 +9,9 @@ module.exports = {
 			{
 				name: 'Whatsapp',
 				icon: 'ri-whatsapp-line',
-				url: `https://wa.me/5492613064177?text=${encodeURI('Hola, necesito hacer una consulta.')}`,
+				url: `https://wa.me/5492615055165?text=${encodeURI(
+					'Hola, necesito hacer una consulta.'
+				)}`,
 			},
 		],
 	},
@@ -39,7 +41,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Estudio Moretti`,
+				name: `Moretti Seguros`,
 				short_name: `Moretti`,
 				start_url: `/`,
 				background_color: `#FFFFFF`,

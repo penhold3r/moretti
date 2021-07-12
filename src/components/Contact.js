@@ -82,7 +82,7 @@ const Contact = () => {
 	}
 
 	return (
-		<section className={`section bg-secondary bg-foo py-5`} id="contacto">
+		<section className={`section bg-white py-5`} id="contacto">
 			<ContactModal
 				show={modal}
 				onHide={() => setModal(false)}
@@ -91,12 +91,9 @@ const Contact = () => {
 				text={modalTexts.text}
 			/>
 			<Container className="py-5">
-				<Card
-					className="border-0 pt-3 px-3 p-md-3"
-					style={{ background: hex2rgba('#FFFFFF', 0.6) }}
-				>
+				<Card className="border-0 pt-3 px-3 p-md-3">
 					<Card.Body className="mb-md-4 p-0">
-						<h2 className="h1 p-0 p-md-3 text-grey">Contacto</h2>
+						<h2 className="h1 p-0 p-md-3 text-secondary">Contacto</h2>
 						<Row>
 							<Col sm={12} md={6}>
 								<ListGroup
@@ -104,7 +101,7 @@ const Contact = () => {
 									variant="flush"
 								>
 									<ListGroup.Item className="d-flex align-items-center bg-transparent px-0 px-md-3">
-										<i className="h3 text-primary mb-0 mr-3 ri-home-2-line"></i>
+										<i className="h3 text-secondary mb-0 mr-3 ri-home-2-line"></i>
 										<div className="d-flex flex-column">
 											<Link
 												to="https://goo.gl/maps/eQuryAaUje7HAbBz7"
@@ -121,10 +118,10 @@ const Contact = () => {
 										</div>
 									</ListGroup.Item>
 									<ListGroup.Item className="d-flex align-items-center bg-transparent px-0 px-md-3">
-										<i className="h3 text-primary mb-0 mr-3 ri-whatsapp-line"></i>
+										<i className="h3 text-secondary mb-0 mr-3 ri-whatsapp-line"></i>
 										<div className="d-flex flex-column">
 											<Link
-												to={`https://wa.me/5492613064177?text=${encodeURI(
+												to={`https://wa.me/5492615055165?text=${encodeURI(
 													'Hola, necesito hacer una consulta.'
 												)}`}
 												className={`text-primary`}
@@ -132,7 +129,7 @@ const Contact = () => {
 												261 505 5165
 											</Link>
 											<Link
-												to={`https://wa.me/5492613064177?text=${encodeURI(
+												to={`https://wa.me/5492612616360995?text=${encodeURI(
 													'Hola, necesito hacer una consulta.'
 												)}`}
 												className={`text-primary`}
@@ -145,7 +142,7 @@ const Contact = () => {
 							</Col>
 							<Col sm={12} md={6} className="px-0 px-md-3">
 								<Form
-									className={`bg-white rounded p-3 p-lg-4 shadow-sm`}
+									className={`bg-gradient rounded p-3 p-lg-4 shadow-sm`}
 									noValidate
 									validated={validated}
 									onSubmit={handleSubmit}
@@ -177,7 +174,7 @@ const Contact = () => {
 												Por favor ingresa tu nombre
 											</Form.Control.Feedback>
 										</InputGroup>
-										<Form.Text className="text-muted">
+										<Form.Text className="text-light">
 											Por favor ingresa tu nombre completo.
 										</Form.Text>
 									</Form.Group>
@@ -207,7 +204,7 @@ const Contact = () => {
 												Por favor ingresa un correo válido.
 											</Form.Control.Feedback>
 										</InputGroup>
-										<Form.Text className="text-muted">
+										<Form.Text className="text-light">
 											No compartiremos tu dirección de correo con nadie.
 										</Form.Text>
 									</Form.Group>
@@ -240,13 +237,14 @@ const Contact = () => {
 												Por favor escribe un mensaje.
 											</Form.Control.Feedback>
 										</InputGroup>
-										<Form.Text className="text-muted">
+										<Form.Text className="text-light">
 											Cuéntanos en que podemos ayudarte.
 										</Form.Text>
 									</Form.Group>
 
 									<Form.Group controlId="formBasicCheckbox">
 										<Form.Check
+											className="text-light"
 											type="checkbox"
 											label="No soy un robot"
 											required
@@ -255,7 +253,7 @@ const Contact = () => {
 
 									<Button
 										className="d-flex w-100 w-md-auto w-lg-auto w-xl-auto justify-content-center align-items-center"
-										variant={'outline-primary'}
+										variant={'outline-light'}
 										type="submit"
 									>
 										<span className="mr-2">Enviar</span>

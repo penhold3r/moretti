@@ -25,39 +25,41 @@ const Footer = () => {
 
 	return (
 		<footer className={`bg-primary py-3`}>
-			<Container className='my-3'>
-				<div className='d-flex py-2 justify-content-center'>
+			<Container className="my-3">
+				<div className="d-flex py-2 justify-content-center">
 					{siteMetadata.socialMedia.map((icon, index) => (
 						<Button
 							key={index}
-							className='rounded-circle mx-2'
-							variant='outline-secondary'
+							className="rounded-circle mx-2"
+							variant="outline-light"
 							href={icon.url}
-							target='_blank'
-							rel='noopener noreferrer'
-							title={icon.name}>
+							target="_blank"
+							rel="noopener noreferrer"
+							title={icon.name}
+						>
 							<i className={`${icon.icon} lead`}></i>
 						</Button>
 					))}
 				</div>
 				<p className={`text-center text-light my-3`}>
-					<small className='d-flex flex-sm-column flex-md-row justify-content-center'>
-						<span className='mb-sm-2 mb-md-none'>
+					<small className="d-flex flex-sm-column flex-md-row justify-content-center">
+						<span className="mb-sm-2 mb-md-none">
 							{siteMetadata.title} &copy; {new Date().getFullYear()}
 						</span>
-						<span className='d-sm-none d-md-inline-block'>&emsp;|&emsp;</span>
-						<span className='mb-sm-2 mb-md-none'>
+						<span className="d-sm-none d-md-inline-block">&emsp;|&emsp;</span>
+						<span className="mb-sm-2 mb-md-none">
 							Desarrollo:{' '}
-							<Link to='https://github.com/penhold3r' className='text-secondary'>
+							<Link to="https://github.com/penhold3r" className="text-grey-100">
 								penHolder Designerd
 							</Link>
 						</span>
-						<span className='d-sm-none d-md-inline-block'>&emsp;|&emsp;</span>
-						<span className='mb-sm-2 mb-md-none'>
+						<span className="d-sm-none d-md-inline-block">&emsp;|&emsp;</span>
+						<span className="mb-sm-2 mb-md-none">
 							Diseño:{' '}
 							<Link
-								to='https://www.instagram.com/cm_brand_agency/'
-								className='text-secondary'>
+								to="https://www.instagram.com/cm_brand_agency/"
+								className="text-grey-100"
+							>
 								CM Brand Agency
 							</Link>
 						</span>
