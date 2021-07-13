@@ -6,16 +6,19 @@ import { isMobileOnly } from 'react-device-detect'
 
 import Link from './Link'
 
-// import colors from '../styles/_variables.module.scss'
+// import colors, { primaryGrey } from '../styles/_variables.module.scss'
 import bg from '../images/moretti-hero.jpg'
+import shape from '../images/moretti-bg-shape.svg'
+
+const bgMode = isMobileOnly ? 'cover' : 'contain'
 
 const styles = {
 	hero: {
-		background: `url(${bg}) no-repeat fixed center / cover`,
+		background: `url(${bg}) no-repeat fixed 70% center / cover`,
 		position: 'relative',
 	},
 	jumbo: {
-		background: 'transparent',
+		background: `url(${shape}) no-repeat center left / ${bgMode}`,
 		height: '100vh',
 	},
 	cta: {
@@ -41,7 +44,9 @@ const Hero = () => {
 				className={`m-0 d-flex justify-content-center align-items-center flex-column`}
 			>
 				<Container className={`d-flex flex-column align-items-start`}>
-					<h2 className={`hero-text h1 text-primary text-uppercase`}>
+					<h2
+						className={`hero-text h1 text-primary text-center text-md-left text-uppercase`}
+					>
 						<span className="text-secondary">
 							<strong>Protegemos </strong>
 						</span>
@@ -53,6 +58,7 @@ const Hero = () => {
 							href="/#contacto"
 							variant="brand"
 							className="mt-5 mx-auto d-inline-flex align-items-center"
+							size="lg"
 						>
 							<i className="ri-chat-3-line mr-2"></i>
 							<span>Asesorate</span>

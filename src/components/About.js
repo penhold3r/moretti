@@ -1,7 +1,8 @@
 import React from 'react'
-import { Container, Row, Col, Card, Image } from 'react-bootstrap'
+import { Container, Row, Col, Image } from 'react-bootstrap'
 import { isMobile } from 'react-device-detect'
 
+import shape from '../images/moretti-shape.svg'
 import img001 from '../images/moretti-image_001.jpg'
 import img002 from '../images/moretti-image_002.jpg'
 import img003 from '../images/moretti-image_003.jpg'
@@ -13,6 +14,7 @@ const styles = {
 		width: '100%',
 	},
 	about: {
+		background: `url(${shape}) no-repeat center left / contain`,
 		padding: isMobile ? '4rem 0' : '7rem 0',
 	},
 }

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="17.18063mm"
+   height="19.234503mm"
+   viewBox="0 0 17.18063 19.234502"
+   version="1.1"
+   id="svg3854"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3856"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.73406285"
+     inkscape:cx="-329.67204"
+     inkscape:cy="160.06804"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     inkscape:window-x="-9"
+     inkscape:window-y="1341"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g487" />
+  <defs
+     id="defs3851">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath491">
+      <path
+         d="M 0,3301 H 1290 V 0 H 0 Z"
+         id="path489" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath499">
+      <path
+         d="m 1153.7,292.61 h 12.25 v -6.131 h -12.25 z"
+         id="path497" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath515">
+      <path
+         d="M 2,1157.94 H 470.409 V 696.828 H 2 Z"
+         id="path513" />
+    </clipPath>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-2.2e-6,50.13699,50.13699,2.2e-6,163.82959,1686.6621)"
+       spreadMethod="pad"
+       id="linearGradient1975">
+      <stop
+         style="stop-opacity:1;stop-color:#006834"
+         offset="0"
+         id="stop1971" />
+      <stop
+         style="stop-opacity:1;stop-color:#00c495"
+         offset="1"
+         id="stop1973" />
+    </linearGradient>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-2.3e-6,52.920395,52.920395,2.3e-6,179.72168,1685.3574)"
+       spreadMethod="pad"
+       id="linearGradient1807">
+      <stop
+         style="stop-opacity:1;stop-color:#006834"
+         offset="0"
+         id="stop1803" />
+      <stop
+         style="stop-opacity:1;stop-color:#00c495"
+         offset="1"
+         id="stop1805" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-70.846984,-163.94419)">
+    <g
+       id="g485"
+       transform="matrix(0.35277777,0,0,-0.35277777,10.60917,392.10512)">
+      <g
+         id="g487"
+         clip-path="url(#clipPath491)">
+        <g
+           id="g493">
+          <g
+             id="g495" />
+          <g
+             id="g507">
+            <g
+               clip-path="url(#clipPath499)"
+               opacity="0.399994"
+               id="g505">
+              <g
+                 transform="translate(1153.6953,292.6104)"
+                 id="g503">
+                <path
+                   d="M 0,0 6.132,-6.132 12.259,0 Z"
+                   style="fill:#41406c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   id="path501" />
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+           id="g1791"
+           transform="translate(20.479862,-1090.6896)">
+          <g
+             id="g1793">
+            <g
+               id="g1799">
+              <g
+                 id="g1801">
+                <path
+                   d="m 160.47,1729.21 26.872,-19.026 -26.872,-19.026 v -8.236 l 38.504,27.262 -38.504,27.261 z"
+                   style="fill:url(#linearGradient1807);stroke:none"
+                   id="path1809" />
+              </g>
+            </g>
+          </g>
+        </g>
+        <g
+           id="g1959"
+           transform="translate(20.479862,-1090.6896)">
+          <g
+             id="g1961">
+            <g
+               id="g1967">
+              <g
+                 id="g1969">
+                <path
+                   d="m 150.273,1690.987 27.112,19.197 -27.112,19.196 z"
+                   style="fill:url(#linearGradient1975);stroke:none"
+                   id="path1977" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

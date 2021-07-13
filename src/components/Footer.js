@@ -42,19 +42,19 @@ const Footer = () => {
 					))}
 				</div>
 				<p className={`text-center text-light my-3`}>
-					<small className="d-flex flex-sm-column flex-md-row justify-content-center">
-						<span className="mb-sm-2 mb-md-none">
+					<small className="d-flex flex-column flex-md-row justify-content-center">
+						<span className="mb-2 mb-md-none">
 							{siteMetadata.title} &copy; {new Date().getFullYear()}
 						</span>
-						<span className="d-sm-none d-md-inline-block">&emsp;|&emsp;</span>
-						<span className="mb-sm-2 mb-md-none">
+						<span className="d-none d-md-inline-block">&emsp;|&emsp;</span>
+						<span className="mb-2 mb-md-none">
 							Desarrollo:{' '}
 							<Link to="https://github.com/penhold3r" className="text-grey-100">
 								penHolder Designerd
 							</Link>
 						</span>
-						<span className="d-sm-none d-md-inline-block">&emsp;|&emsp;</span>
-						<span className="mb-sm-2 mb-md-none">
+						<span className="d-none d-md-inline-block">&emsp;|&emsp;</span>
+						<span className="mb-2 mb-md-none">
 							Diseño:{' '}
 							<Link
 								to="https://www.instagram.com/cm_brand_agency/"

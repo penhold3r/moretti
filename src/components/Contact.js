@@ -12,10 +12,13 @@ import {
 import qs from 'qs'
 import axios from 'axios'
 
-import hex2rgba from '../utils/hex2rgba'
-
 import ContactModal from './ContactModal'
 import Link from './Link'
+
+const formConfig = {
+	url: 'https://estudiojuridicodipietro.com/contact-form/index.php',
+	dest: 'penhold3r@gmail.com',
+}
 
 const Contact = () => {
 	const [validated, setValidated] = useState(false)
@@ -39,7 +42,7 @@ const Contact = () => {
 		setValidated(true)
 
 		if (form.checkValidity()) {
-			const url = 'https://estudiojuridicodipietro.com/contact-form/index.php'
+			const { url, dest } = formConfig
 
 			setModal(true)
 			setModalTexts({
@@ -53,7 +56,7 @@ const Contact = () => {
 				url,
 				data: qs.stringify({
 					...data,
-					dest: 'penhold3r@gmail.com,consultas@estudiojuridicodipietro.com',
+					dest,
 				}),
 				headers: {
 					'content-type': 'application/x-www-form-urlencoded;charset=utf-8',
@@ -104,16 +107,17 @@ const Contact = () => {
 										<i className="h3 text-secondary mb-0 mr-3 ri-home-2-line"></i>
 										<div className="d-flex flex-column">
 											<Link
-												to="https://goo.gl/maps/eQuryAaUje7HAbBz7"
+												to="https://goo.gl/maps/oo4bY4JYktStKt3n8"
 												className={`text-primary`}
 											>
-												Italia 5954, Chacras de Coria, Luján, Mendoza.
+												- Viamonte 5200 esquina Larrea local 5. Complejo Los
+												Pinos, Chacras de Coria, Luján, Mendoza.
 											</Link>
 											<Link
-												to="https://goo.gl/maps/eQuryAaUje7HAbBz7"
+												to="https://goo.gl/maps/tn5q1LWpBxramcX89"
 												className={`text-primary`}
 											>
-												Cayetano Silva 1331, Godoy Cruz, Mendoza.
+												- Cayetano Silva 1331, Godoy Cruz, Mendoza.
 											</Link>
 										</div>
 									</ListGroup.Item>
