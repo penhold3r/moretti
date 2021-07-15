@@ -16,8 +16,8 @@ import ContactModal from './ContactModal'
 import Link from './Link'
 
 const formConfig = {
-	url: 'https://estudiojuridicodipietro.com/contact-form/index.php',
-	dest: 'penhold3r@gmail.com',
+	url: 'https://morettiasesores.com/contact-form/index.php',
+	dest: 'penhold3r@gmail.com, morettihr@gmail.com',
 }
 
 const Contact = () => {

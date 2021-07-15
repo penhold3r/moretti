@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import faviconICO from '../images/favicon.ico'
 import faviconPNG from '../images/favicon.png'
+import opengraph from '../images/moretti-opengraph.png'
 
 const SEO = ({ description, lang, meta, title }) => {
 	const {
@@ -28,8 +29,6 @@ const SEO = ({ description, lang, meta, title }) => {
 	const siteTitle = title || siteMetadata.title
 	const metaDescription = description || siteMetadata.description
 	const { siteUrl, keywords } = siteMetadata
-
-	const opengraph = ''
 
 	return (
 		<Helmet

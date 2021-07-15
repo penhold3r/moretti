@@ -1,10 +1,11 @@
 module.exports = {
 	siteMetadata: {
-		title: `Moretti Seguros`,
-		description: `Moretti Seguros es una organización de productores asesores especializados en varias ramas del seguro, con más de 20 años de experiencia en la materia.`,
-		siteUrl: 'https://estudiomoretti.com',
-		keywords: 'seguro vida asaguradora art accidentes laboral praxist',
-		author: `@penholder`,
+		title: `Moretti Asesores`,
+		description: `Moretti Asesores es una organización de productores asesores especializados en varias ramas del seguro, con más de 20 años de experiencia en la materia.`,
+		siteUrl: 'https://morettiasesores.com',
+		keywords:
+			'seguro vida asaguradora art accidentes laboral praxis asesores asesoria',
+		author: `Moretti Asesores`,
 		socialMedia: [
 			{
 				name: 'Whatsapp',
