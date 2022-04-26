@@ -1,11 +1,11 @@
-import React from 'react'
-import { Container, Row, Col, Image } from 'react-bootstrap'
-import { isMobile } from 'react-device-detect'
+import React from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import { isMobile } from 'react-device-detect';
 
-import shape from '../images/moretti-shape.svg'
-import img001 from '../images/moretti-image_001.jpg'
-import img002 from '../images/moretti-image_002.jpg'
-import img003 from '../images/moretti-image_003.jpg'
+import shape from '../images/moretti-shape.svg';
+import img001 from '../images/moretti-image_001.jpg';
+import img002 from '../images/moretti-image_002.jpg';
+import img003 from '../images/moretti-image_003.jpg';
 
 const styles = {
 	imgs: {
@@ -17,7 +17,7 @@ const styles = {
 		background: `url(${shape}) no-repeat center left / contain`,
 		padding: isMobile ? '4rem 0' : '7rem 0',
 	},
-}
+};
 
 const About = () => (
 	<section className="about bg-gradient section" id="nosotros">
@@ -38,13 +38,13 @@ const About = () => (
 			<h2 className="about-title h3 text-uppercase text-white text-center mt-4 mt-md-0">
 				<strong>¿Quienes Somos?</strong>
 			</h2>
-			<p className="lead text-white text-center pt-2 pb-4">
-				Somos una organización de productores asesores especializados en varias
-				ramas del seguro, con más de 20 años de experiencia en la materia.
-				Fieles a la palabra "Productor" y amantes de la palabra "Asesor".
+			<p className="lead text-white text-center pt-2 pb-4 px-2">
+				Somos una organización de productores asesores especializados en varias ramas del
+				seguro, con más de 20 años de experiencia en la materia. Fieles a la palabra
+				"Productor" y amantes de la palabra "Asesor".
 			</p>
 		</Container>
 	</section>
-)
+);
 
-export default About
+export default About;

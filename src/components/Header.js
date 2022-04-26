@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useRef } from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import { Container, Navbar, Nav, Button } from 'react-bootstrap'
-import { isMobileOnly } from 'react-device-detect'
+import React, { useEffect, useState, useRef } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Container, Navbar, Nav, Button } from 'react-bootstrap';
+import { isMobileOnly } from 'react-device-detect';
 
-import Link from './Link'
+import Link from './Link';
 
-import logo from '../images/moretti-logo.svg'
+import logo from '../images/moretti-logo.svg';
 
 const styles = {
 	nav: {
@@ -25,7 +25,7 @@ const styles = {
 		fontSize: '1.5rem',
 		cursor: 'pointer',
 	},
-}
+};
 
 const Header = () => {
 	const query = graphql`
@@ -36,51 +36,45 @@ const Header = () => {
 				}
 			}
 		}
-	`
+	`;
 	const {
 		site: { siteMetadata },
-	} = useStaticQuery(query)
-	const [opaque, setOpaque] = useState(false)
-	const [colapsed, setColapsed] = useState(true)
+	} = useStaticQuery(query);
+	const [opaque, setOpaque] = useState(false);
+	const [colapsed, setColapsed] = useState(true);
 
-	const toggleBtn = useRef(null)
+	const toggleBtn = useRef(null);
 	const toggleIcon = colapsed ? (
 		<i className="ri-menu-line"></i>
 	) : (
 		<i className="ri-close-line"></i>
-	)
+	);
 
 	const handleToggle = () => {
-		setColapsed(!colapsed)
-		setOpaque(!opaque)
-	}
+		setColapsed(!colapsed);
+		setOpaque(!opaque);
+	};
 
-	const handleScroll = () => colapsed && setOpaque(window.scrollY >= 200)
+	const handleScroll = () => colapsed && setOpaque(window.scrollY >= 200);
 
 	useEffect(() => {
 		if (window) {
-			window.scrollY >= 200 && setOpaque(true)
+			window.scrollY >= 200 && setOpaque(true);
 
-			window.onscroll = () => handleScroll()
+			window.onscroll = () => handleScroll();
 		}
-	}, [colapsed])
+	}, [colapsed]);
 
 	return (
 		<header className="main-header">
-			<Navbar
-				bg="white"
-				variant="light"
-				fixed="top"
-				expand="md"
-				style={styles.nav}
-			>
+			<Navbar bg="white" variant="light" fixed="top" expand="md" style={styles.nav}>
 				<Container className="pos-relative">
 					<Navbar.Brand href="#">
 						<img
 							alt={siteMetadata.title}
 							src={logo}
 							className="d-inline-block align-top"
-							style={styles.logo}
+							style={{ ...styles.logo, ...(isMobileOnly && { width: '150px' }) }}
 						/>
 					</Navbar.Brand>
 					<Navbar.Toggle
@@ -145,7 +139,7 @@ const Header = () => {
 				</Container>
 			</Navbar>
 		</header>
-	)
-}
+	);
+};
 
-export default Header
+export default Header;

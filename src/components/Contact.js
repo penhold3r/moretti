@@ -6,10 +6,10 @@ import axios from 'axios'
 import ContactModal from './ContactModal'
 import Link from './Link'
 
-const cors = 'https://cors-anywhere.herokuapp.com/'
+// const cors = 'https://cors-anywhere.herokuapp.com/'
 
 const formConfig = {
-	url: cors + 'https://morettiasesores.com/contact-form/index.php',
+	url: 'https://morettiasesores.com/contact-form/index.php',
 	dest: 'morettihr@gmail.com',
 }
 
